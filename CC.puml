@@ -1,0 +1,44 @@
+@startuml
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.util.ArrayList
+class java.util.Scanner
+class pkg2024ft22vfinal.Ciclocuatri
+class pkg2024ft22vfinal.Ciclos
+class pkg2024ft22vfinal.Conexion
+class pkg2024ft22vfinal.Cuatrimestres
+class pkg2024ft22vfinal.GestorCC
+class pkg2024ft22vfinal.GestorCiclos
+class pkg2024ft22vfinal.GestorCuatrimestres
+class pkg2024ft22vfinal.Main
+class pkg2024ft22vfinal.ModeloCC
+class pkg2024ft22vfinal.ModeloCiclos
+class pkg2024ft22vfinal.ModeloCuatrimestres
+pkg2024ft22vfinal.Conexion ..> java.sql.Connection
+pkg2024ft22vfinal.Conexion ..> java.sql.DriverManager
+pkg2024ft22vfinal.Conexion ..> java.sql.PreparedStatement
+pkg2024ft22vfinal.Conexion ..> java.sql.ResultSet
+pkg2024ft22vfinal.Conexion ..> java.sql.SQLException
+pkg2024ft22vfinal.GestorCC ..> java.util.ArrayList
+pkg2024ft22vfinal.GestorCC ..> java.util.Scanner
+pkg2024ft22vfinal.GestorCC --|> pkg2024ft22vfinal.ModeloCC
+pkg2024ft22vfinal.GestorCiclos ..> java.util.ArrayList
+pkg2024ft22vfinal.GestorCiclos ..> java.util.Scanner
+pkg2024ft22vfinal.GestorCiclos --|> pkg2024ft22vfinal.ModeloCiclos
+pkg2024ft22vfinal.GestorCuatrimestres ..> java.util.ArrayList
+pkg2024ft22vfinal.GestorCuatrimestres ..> java.util.Scanner
+pkg2024ft22vfinal.GestorCuatrimestres --|> pkg2024ft22vfinal.ModeloCuatrimestres
+pkg2024ft22vfinal.Main ..> java.util.Scanner
+pkg2024ft22vfinal.ModeloCC ..> java.sql.SQLException
+pkg2024ft22vfinal.ModeloCC ..> java.util.ArrayList
+pkg2024ft22vfinal.ModeloCC --|> pkg2024ft22vfinal.Conexion
+pkg2024ft22vfinal.ModeloCiclos ..> java.sql.SQLException
+pkg2024ft22vfinal.ModeloCiclos ..> java.util.ArrayList
+pkg2024ft22vfinal.ModeloCiclos --|> pkg2024ft22vfinal.Conexion
+pkg2024ft22vfinal.ModeloCuatrimestres ..> java.sql.SQLException
+pkg2024ft22vfinal.ModeloCuatrimestres ..> java.util.ArrayList
+pkg2024ft22vfinal.ModeloCuatrimestres --|> pkg2024ft22vfinal.Conexion
+@enduml
